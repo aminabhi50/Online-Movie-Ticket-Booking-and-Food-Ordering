@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.precisa.goldcinema.PaymentActivity">
+
+            <TextView
+                android:id="@+id/tv_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="@string/payment_options"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                android:id="@+id/radioGroup"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp">
+
+                <RadioButton
+                    android:id="@+id/cc"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:text="Credit Card"
+                    android:checked="true"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/dc"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:text="Debit Card"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/nb"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:text="Net Banking"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/paytm"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:text="Paytm"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp" />
+
+</LinearLayout>

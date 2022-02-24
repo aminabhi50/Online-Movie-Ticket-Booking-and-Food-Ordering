@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    tools:context="com.example.precisa.goldcinema.ShowtimeActivity">
+    <TextView
+        android:id="@+id/dshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dshow"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_below="@id/dshow"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold" />
+    <Spinner
+        android:id="@+id/sp1"
+        android:layout_below="@id/dshow"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@id/date"
+        android:layout_marginLeft="20dp" >
+    </Spinner>
+    <TextView
+        android:id="@+id/showtime"
+        android:layout_marginTop="220dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/showtime"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showtime"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp" />
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/b1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/showtime" />
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/b1"
+        android:layout_marginLeft="90dp" />
+    <Button
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/b3"
+        android:layout_below="@id/b1" />
+</RelativeLayout>
